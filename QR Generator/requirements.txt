@@ -1,0 +1,6 @@
+pandas
+numpy
+qrcode
+pillow
+configparser
+openpyxl
