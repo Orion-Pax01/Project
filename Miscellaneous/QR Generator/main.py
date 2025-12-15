@@ -56,7 +56,7 @@ def make_qr(data: str, file_name: str, save_folder: str, logo_path: str):
     
     img.save(save_path)
 
-def clear_folder(folder_path):
+def clear_folder(folder_path: str):
     """Delete all contents of the folder if it exists"""
     if os.path.exists(folder_path):
         shutil.rmtree(folder_path)
@@ -109,3 +109,4 @@ clear_folder(save_folder)
 for i in strings:
     make_qr(strings[i], i, save_folder, logo_path)
 print("Done Processing.")
+
